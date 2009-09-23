@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B496BFD-E5F1-4201-951F-82B347671BD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperCodeDom</RootNamespace>
+    <AssemblyName>SuperCodeDom</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent\AgentBase.cs" />
+    <Compile Include="Agent\CodeMemberMethodAgent.cs" />
+    <Compile Include="Agent\CodeStatementAgentBase.cs" />
+    <Compile Include="Agent\CodeTypeDeclarationAgent.cs" />
+    <Compile Include="Agent\CodeNamespaceAgent.cs" />
+    <Compile Include="Agent\CodeTypeMemberAgentBase.cs" />
+    <Compile Include="Agent\MethodChainBase.cs" />
+    <Compile Include="Agent\CodeMemberPropertyAgent.cs" />
+    <Compile Include="Agent\CodeMemberFieldAgent.cs" />
+    <Compile Include="Agent\CodeMemberEventAgent.cs" />
+    <Compile Include="Agent\CodeSnippetTypeMemberAgent.cs" />
+    <Compile Include="Agent\CodeEnumDeclarationAgent.cs" />
+    <Compile Include="Extension\AgentExtension.cs" />
+    <Compile Include="Extension\BasicExtension.cs" />
+    <Compile Include="DeclarationCreator.cs" />
+    <Compile Include="ExpressionCreator.cs" />
+    <Compile Include="Extension\AgentExtension.Declaration.cs" />
+    <Compile Include="NestExtention\NestExtention.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatementCreator.cs" />
+    <Compile Include="Agent\CodeConditionStatementAgent.cs" />
+    <Compile Include="Agent\CodeStatementAgent.cs" />
+    <Compile Include="Agent\CodeTryCatchFinallyStatementAgent.cs" />
+    <Compile Include="Extension\AgentExtension.Statement.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

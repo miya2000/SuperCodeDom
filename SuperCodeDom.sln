@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperCodeDom", "SuperCodeDom\SuperCodeDom.csproj", "{1B496BFD-E5F1-4201-951F-82B347671BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "t", "t\t.csproj", "{9FDF0AD3-7C0C-40EE-8001-F8740EEACDCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B496BFD-E5F1-4201-951F-82B347671BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B496BFD-E5F1-4201-951F-82B347671BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B496BFD-E5F1-4201-951F-82B347671BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B496BFD-E5F1-4201-951F-82B347671BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDF0AD3-7C0C-40EE-8001-F8740EEACDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDF0AD3-7C0C-40EE-8001-F8740EEACDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDF0AD3-7C0C-40EE-8001-F8740EEACDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDF0AD3-7C0C-40EE-8001-F8740EEACDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
