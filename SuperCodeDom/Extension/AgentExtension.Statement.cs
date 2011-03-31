@@ -331,7 +331,7 @@ namespace SuperCodeDom.Extension
         /// </summary>
         public static CodeTryCatchFinallyStatementAgent<Holder> Catch<Holder>(this CodeTryCatchFinallyStatementAgent<Holder> agent, string type, string localName)
         {
-            return agent.Catch(new CodeTypeReference(type), null);
+            return agent.Catch(new CodeTypeReference(type), localName);
         }
         /// <summary>
         /// change statements to CatchClause.

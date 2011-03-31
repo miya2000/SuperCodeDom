@@ -146,12 +146,15 @@ namespace t
                     .Add(E.New<string>())
                     .___(E.New<string>())
                     .Add(E.New<string>())
+                .Catch("Exception", "exx")
                 .Finally()
                     .Return()
                 .End()
             .Finally()
                 .Add(E.New<string>())
             .End();
+            OutputCodeObject(exp4);
+
             var exp5 = S
             .If(E.Val(true))
                 .If(E.Val(true))
